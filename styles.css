@@ -1,35 +1,122 @@
+/* General Styles */
 body {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #ffffff;
-    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
 }
 
 header {
-    background: #000000;
+    background-color: #0d0d0d;
     color: white;
-    padding: 10px 0;
-    height: 25vh;
     text-align: center;
+    padding: 20px;
+    position: relative;
+}
+
+header img {
+    width: 80px;
+    height: auto;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    animation: fadeInLogo 1s ease-in-out;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin: 0;
+    animation: slideInText 1.5s ease-in-out;
 }
 
 main {
-    padding: 30px;
+    text-align: center;
+    padding: 20px;
 }
 
 footer {
+    background-color: #110f0f;
+    color: white;
     text-align: center;
-    padding: 10px 0;
-    background: #000000;
-    color: rgb(255, 255, 255);
+    padding: 10px;
     position: relative;
     bottom: 0;
     width: 100%;
 }
-img {
-    max-width: 50%; /* Makes images responsive */
-    height: auto; /* Keeps the aspect ratio */
-    display: block; /* Centers images if you want to align them */
-    margin: 0 auto; /* Centers the images */
+
+footer p {
+    margin: 5px 0;
+}
+
+/* Links to Instagram and WhatsApp */
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.social-links img {
+    width: 50px;
+    height: 50px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.social-links img:hover {
+    transform: scale(1.2);
+}
+
+/* Footer Image */
+footer img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.5s ease;
+}
+
+footer img:hover {
+    transform: scale(1.05);
+}
+
+/* Animations */
+@keyframes fadeInLogo {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideInText {
+    0% {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    .social-links img {
+        width: 40px;
+        height: 40px;
+    }
+
+    footer img {
+        max-width: 100%;
+    }
 }
