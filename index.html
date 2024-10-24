@@ -5,134 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GadgetXone - Premium Electronics</title>
     
-    <!-- Google Fonts for a modern look -->
+    <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-    
-    <!-- External CSS -->
-    <style>
-        /* General Styles */
-        body {
-            margin: 0;
-            padding: 0;
-            font-family: 'Poppins', sans-serif;
-            background-color: #f0f0f0;
-            color: #333;
-        }
-
-        header {
-            background-color: #0d0d0d;
-            color: white;
-            text-align: center;
-            padding: 20px;
-            position: relative;
-        }
-
-        header img {
-            width: 80px;
-            height: auto;
-            position: absolute;
-            top: 10px;
-            left: 10px;
-            animation: fadeInLogo 1s ease-in-out;
-        }
-
-        header h1 {
-            font-size: 2.5rem;
-            margin: 0;
-            animation: slideInText 1.5s ease-in-out;
-        }
-
-        main {
-            text-align: center;
-            padding: 20px;
-        }
-
-        footer {
-            background-color: #110f0f;
-            color: white;
-            text-align: center;
-            padding: 10px;
-            position: relative;
-            bottom: 0;
-            width: 100%;
-        }
-
-        footer p {
-            margin: 10px 10px;
-        }
-
-        /* Links to Instagram and WhatsApp */
-        .social-links {
-            display: flex;
-            justify-content: center;
-            gap: 30px;
-            margin-top: 20px;
-        }
-
-        .social-links img {
-            width: 50px;
-            height: 50px;
-            transition: transform 0.3s ease-in-out;
-        }
-
-        .social-links img:hover {
-            transform: scale(1.2);
-        }
-
-        /* Footer Image */
-        footer img {
-            width: 100%;
-            max-width: 400px;
-            height: auto;
-            margin: 20px 20px;
-            border-radius: 20px;
-            box-shadow: 0px 4px 10px rgba(46, 46, 46, 0.1);
-            transition: transform 0.5s ease;
-        }
-
-        footer img:hover {
-            transform: scale(1.05);
-        }
-
-        /* Animations */
-        @keyframes fadeInLogo {
-            0% {
-                opacity: 0;
-                transform: translateY(-20px);
-            }
-            100% {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-        @keyframes slideInText {
-            0% {
-                opacity: 0;
-                transform: translateX(-100px);
-            }
-            100% {
-                opacity: 1;
-                transform: translateX(0);
-            }
-        }
-
-        /* Mobile Responsiveness */
-        @media (max-width: 768px) {
-            header h1 {
-                font-size: 3rem;
-            }
-
-            .social-links img {
-                width: 40px;
-                height: 40px;
-            }
-
-            footer img {
-                max-width: 100%;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css"> <!-- Linking external CSS file for a clean structure -->
 </head>
 <body>
 
@@ -146,28 +21,65 @@
     <main>
         <p>Tap on the icons below for more updates</p>
         <div class="social-links">
-            <a href="https://www.instagram.com/gadgetxone.in?igsh=emc5YjVoem1jMnpq" target="_blank">
-                <img src="images/OIP (1).jpeg" alt="Instagram">
+            <a href="https://www.instagram.com/gadgetxone.in" target="_blank">
+                <img src="images/1516920567instagram-png-logo-transparent.png" alt="Instagram">
             </a>
             <a href="https://chat.whatsapp.com/JAp6wBrNAb85F61vAfaAOK" target="_blank">
                 <img src="images/whatsapp.png" alt="WhatsApp">
             </a>
+        </div>
+
+        <div class="product-gallery">
+            <div class="product-item">
+                <a href="product-page-1.html">
+                    <img src="images/4523861.jpg" alt="Analog Watches">
+                    <p>Analog Watches</p>
+                </a>
+                <button class="buy-now" onclick="openCustomerForm()">Buy Now</button>
+            </div>
+            <div class="product-item">
+                <a href="product-page-2.html">
+                    <img src="images/airpods-2_2.jpg" alt="Earpods">
+                    <p>Earpods</p>
+                </a>
+                <button class="buy-now" onclick="openCustomerForm()">Buy Now</button>
+            </div>
+            <div class="product-item">
+                <a href="product-page-3.html">
+                    <img src="images/astraunuat.jpg" alt="Astronaut">
+                    <p>Astronaut</p>
+                </a>
+                <button class="buy-now" onclick="openCustomerForm()">Buy Now</button>
+            </div>
+            <div class="product-item">
+                <a href="product-page-4.html">
+                    <img src="images/glass moon.jpeg" alt="Cool Showpiece">
+                    <p>Glass ball moon light</p>
+                </a>
+                <button class="buy-now" onclick="openCustomerForm()">Buy Now</button>
+            </div>
+            <div class="product-item">
+                <a href="product-page-5.html">
+                    <img src="images/headphone.jpeg" alt="Headphones">
+                    <p>Headphones</p>
+                </a>
+                <button class="buy-now" onclick="openCustomerForm()">Buy Now</button>
+            </div>
         </div>
     </main>
 
     <!-- Footer Section -->
     <footer>
         <p>Premium Gadgets and Accessories</p>
-        <img src="images/4523861.jpg" alt="Gadget Showcase">              <img src="images/airpods-2_2.jpg" alt="Gadget Showcase">
-        <p>Analog Watches & Earpods</p>
-        <img src="images/astraunuat.jpg" alt="Gadget Showcase">              <img src="images/headphone.jpeg" alt="Gadget Showcase">
-        <p>Headphones & Smart Lights</p>
-        <img src="images/speaker1.jpg" alt="Gadget Showcase">                  <img src="images/glass moon.jpeg" alt="Gadget Showcase">
-        <p>Speakers & Showpiece</p>
         <p>&COPY; GadgetXone.in </p>
-
-        </p>
     </footer>
+
+    <!-- Buy Now Button Script -->
+    <script>
+        function openCustomerForm() {
+            window.location.href = "customer-form.html"; // Redirecting to customer form
+        }
+    </script>)
 
 </body>
 </html>
